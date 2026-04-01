@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// 页面占位，Task 6+ 会替换
-const LibraryPage = () => <div style={{ padding: 40, color: '#94a3b8' }}>书库（开发中）</div>;
-const ReaderPage = () => <div style={{ padding: 40, color: '#94a3b8' }}>阅读器（开发中）</div>;
-const SettingsPage = () => <div style={{ padding: 40, color: '#94a3b8' }}>设置（开发中）</div>;
+import LibraryPage from './pages/LibraryPage';
+import ReaderPage from './pages/ReaderPage';
+import SettingsPage from './pages/SettingsPage';
 
 export default function App() {
   return (
