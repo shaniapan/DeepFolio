@@ -1,0 +1,14 @@
+{
+  "name": "reader",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w packages/frontend\" \"npm run dev -w packages/backend\"",
+    "start": "concurrently \"npm run start -w packages/frontend\" \"npm run start -w packages/backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
