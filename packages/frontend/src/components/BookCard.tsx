@@ -22,7 +22,12 @@ export default function BookCard({ book, onDelete }: Props) {
       <p style={{ color: '#f1f5f9', fontSize: 14, fontWeight: 600, margin: '0 0 4px' }}>{book.title}</p>
       <p style={{ color: '#64748b', fontSize: 12, margin: 0 }}>{book.format.toUpperCase()}</p>
       <button
-        onClick={e => { e.stopPropagation(); onDelete(book.id); }}
+        onClick={e => {
+          e.stopPropagation();
+          if (window.confirm(`确认删除《${book.title}》？此操作无法撤销。`)) {
+            onDelete(book.id);
+          }
+        }}
         style={{
           position: 'absolute', top: 8, right: 8, background: 'none',
           border: 'none', color: '#475569', cursor: 'pointer', fontSize: 16

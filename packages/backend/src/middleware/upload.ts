@@ -13,13 +13,15 @@ export const upload = multer({
     destination: (_req, _file, cb) => cb(null, BOOKS_DIR),
     filename: (_req, file, cb) => {
       const id = crypto.randomUUID();
-      const ext = path.extname(file.originalname);
+      const originalName = Buffer.from(file.originalname, 'latin1').toString('utf8');
+      const ext = path.extname(originalName);
       cb(null, `${id}${ext}`);
     }
   }),
   fileFilter: (_req, file, cb) => {
+    const originalName = Buffer.from(file.originalname, 'latin1').toString('utf8');
     const allowed = ['.epub', '.pdf', '.txt'];
-    const ext = path.extname(file.originalname).toLowerCase();
+    const ext = path.extname(originalName).toLowerCase();
     cb(null, allowed.includes(ext));
   },
   limits: { fileSize: 200 * 1024 * 1024 }

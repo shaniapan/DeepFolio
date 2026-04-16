@@ -1,3 +1,21 @@
 .superpowers/
 node_modules/
 .env
+.env.*
+!.env.example
+
+# 隐私与运行时数据目录
+data/*
+!data/.gitkeep
+reader-notes/*
+!reader-notes/.gitkeep
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# macOS 临时文件
+.DS_Store
