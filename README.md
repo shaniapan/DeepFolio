@@ -14,22 +14,22 @@
 ### 核心特性
 1. **📉 双轨制激进控费引擎 (Dual-Track AI)** 
    拒绝把长文整本暴击 Token！系统特有**双轨并行机制**，全局只抽取首尾 15000 字符建立大纲；精读时采用**滑动视口算法**（自动截取当前屏幕上下 40 段投喂），做到“看到哪，算到哪”，帮您死死守住钱包。
-   ![宏观透视大局观视野](/Users/kazrabbit/Documents/anti_projects/reader/docs/assets/screenshot_dashboard.png)
+   ![宏观透视大局观视野](./docs/assets/screenshot_dashboard.png)
 
 2. **📐 L0-L3 三维极简空间防塌陷 UI**
    采用严苛的视觉层级管控，AI 解释与划线悬浮菜单像水流一样依附于正文边缘，沉浸感极强，专为高密度长篇论文排版解构。
-   ![沉浸式侧边注释](/Users/kazrabbit/Documents/anti_projects/reader/docs/assets/screenshot_popover.png)
+   ![沉浸式侧边注释](./docs/assets/screenshot_popover.png)
 
 3. **🔌 Qwen 首发推荐，多模型统一接入** 
    默认并深度适配 **通义千问 (Qwen)**，开箱即用。同时原生支持无缝设置切换 DeepSeek, OpenAI 等。
-   ![灵活配置模型设置](/Users/kazrabbit/Documents/anti_projects/reader/docs/assets/screenshot_settings.png)
+   ![灵活配置模型设置](./docs/assets/screenshot_settings.png)
 
 4. **🪨 纯血本地优先 (Local-First)**
    没有任何远端同步阴谋。底层强制实施 SQLite 数据库和本地 Markdown 的双写机制，你的读书笔记和高亮永远攥在自己硬盘里。
 
 5. **🪪 专属个人档案与目标设定 (User Profile & Goal)**
    我们深怀共识：同样的文献，对程序员、法学教授和高中生是不一样的。通过事先配置用户档案，所有的解读、联想与行动清单都会化身为完完全全针对您的“定做辅导”模型。
-   ![专属个人档案设定](/Users/kazrabbit/Documents/anti_projects/reader/docs/assets/screenshot_profile.png)
+   ![专属个人档案设定](./docs/assets/screenshot_profile.png)
 
 ## 🚀 极客五分钟上车指南
 
